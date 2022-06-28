@@ -1,0 +1,415 @@
+*
+	&::-webkit-input-placeholder
+		color: #666;
+		opacity: 1;
+	&:-moz-placeholder 
+		color: #666;
+		opacity: 1;
+	&::-moz-placeholder 
+		color: #666;
+		opacity: 1;
+	&:-ms-input-placeholder 
+		color: #666;
+		opacity: 1;
+
+
+body 
+	input:focus:required:invalid, textarea:focus:required:invalid
+
+	input:required:valid, textarea:required:valid
+
+
+body 
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-size: 16px;
+	color: #4b4b4b;
+	min-width: 320px;
+	position: relative;
+
+.hidden 
+	display: none;
+
+.carousel 
+	img 
+		width: 100%;
+		height: auto;
+
+.parallax 
+	background-attachment: fixed;
+	background-position: 50% 0;
+	position: relative;
+
+$primary-color: #ff6633
+
+header
+	background-image: url("../img/bg_header.jpg")
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	height: 700px
+	color: #fff
+	position: relative
+	.logo
+		margin-top: 24px
+		a
+			color: $primary-color
+			font-family: "PTSerifBold"
+			font-size: 36px
+	.main_menu
+		margin-top: 40px
+		li
+			display: inline-block
+			width: 120px
+			vertical-align: top
+			font-family: "PTSansItalic"
+			font-size: 13px
+			margin-left: 50px
+			p
+				margin: 0
+				padding: 0
+			a
+				color: #fff
+				font-size: 14px
+				font-family: "PTSerifBold"
+				text-transform: uppercase
+				&:hover
+					text-decoration: underline
+					color: $primary-color
+			.orange_link
+				color: $primary-color
+	h1
+		text-transform: uppercase
+		font-family: "PTSerifBold"
+		font-size: 52px
+		text-align: center
+		margin: 0
+		margin-top: 160px
+	h3
+		font-family: "PTSerifRegular"
+		font-size: 36px
+		text-align: center
+		font-weight: normal
+		margin: 0
+		span
+			text-decoration: underline
+	.scroll
+		display: block
+		position: absolute
+		bottom: 54px
+		left: 50%
+		margin-left: -85px
+		a
+			color: #fff
+			span
+				position: absolute
+				left: 50%
+				width: 13px
+				height: 13px
+				margin-left: -12px
+				border-left: 2px solid #fff
+				border-bottom: 2px solid #fff
+				-webkit-transform: rotate(-45deg)
+				transform: rotate(-45deg)
+				-webkit-animation: sdb05 1.5s infinite
+				animation: sdb05 1.5s infinite
+				box-sizing: border-box
+			.span1
+				margin-top: 10px
+			.span2
+				margin-top: 20px
+
+@-webkit-keyframes sdb05 
+	0%
+		-webkit-transform: rotate(-45deg) translate(0, 0)
+		opacity: 0
+	50% 
+		opacity: 1
+	100% 
+		-webkit-transform: rotate(-45deg) translate(-20px, 20px)
+		opacity: 0
+@keyframes sdb05 
+	0%
+		transform: rotate(-45deg) translate(0, 0)
+		opacity: 0
+	50% 
+		opacity: 1
+	100%
+		transform: rotate(-45deg) translate(-20px, 20px)
+		opacity: 0
+
+#about_s
+	background-color: #f7f7f7
+	padding-top: 100px
+	position: relative
+	height: 1000px
+	.glass
+		width: 583px
+	.kitchen
+		margin-top: 40px
+		margin-left: -24px
+		height: 226px
+		width: 226px
+	.beef_steak
+		margin-top: 40px
+		margin-left: 25px
+		height: 226px
+		width: 226px
+	.container
+		position: relative
+		.McGregor
+			position: absolute
+			width: 636px
+			height: 387px
+			top: 366px
+			left: 0
+
+
+
+.button
+	background-color: $primary-color
+	text-transform: uppercase
+	font-family: "PTSansBold"
+	color: #fff
+	font-size: 13px
+	padding: 17px 51px
+	border-radius: 5px
+	&:hover
+		background-color: #d94717
+
+.about_block,
+.menu_block
+	h3
+		text-align: center
+		color: #3b3b3b
+		font-size: 26px
+		font-family: "PTSerifBold"
+	p
+		color: #4b4b4b
+		font-size: 16px
+		font-family: "PTSansRegular"
+		a
+			color: $primary-color
+			&:hover
+				text-decoration: underline
+				color: $primary-color
+	>a
+		float: right
+		margin-top: 31px
+		margin-right: 31px
+
+#menu_s
+	padding: 120px 0
+	background-color: #FFF
+	.photo1
+		float: left
+		img
+			width: 265px
+			height: 265px
+	.photo2
+		float: right
+		img
+			width: 265px
+			height: 265px
+	.photo3
+		float: left
+		img
+			margin-top: 25px
+			width: 555px
+			height: 265px
+	.menu_block
+		margin-top: 120px
+
+#reservation
+	background-color: #f7f7f7
+	padding: 120px 0
+	.pop_form
+		padding-top: 66px
+		font-family: "PTSerifBold"
+		font-size: 22px
+		text-align: center
+		height: 600px
+		width: 455px
+		background-color: #fff
+		-webkit-box-shadow: 0px 4px 14px -1px rgba(110,110,110,1)
+		-moz-box-shadow: 0px 4px 14px -1px rgba(110,110,110,1)
+		box-shadow: 0px 4px 14px -1px rgba(110,110,110,1)
+		input
+			width: 310px
+			height: 50px
+			color: #555555
+			font-size: 14px
+			background-image: url("../img/form_iconset.png")
+			background-repeat: no-repeat;
+			padding-left: 20px
+			background-color: #f7f7f7
+			outline: none
+			border: 1px solid #e5e4e4
+			border-radius: 4px
+			margin-bottom: 20px;
+		.form_name
+			background-position: 275px 18px
+		.form_date
+			background-position: 275px -107px
+		.form_time
+			background-position: 275px -238px
+		.form_commensals
+			background-position: 275px -381px
+			margin-bottom: 25px;
+		.form_button
+			padding-top: 2px
+			-webkit-border-radius: 5px
+			-moz-border-radius: 5px
+			border-radius: 5px
+			font-family: "PTSansBold"
+			color: #fff
+			font-size: 14px
+			background: #222222
+			width: 310px
+			height: 50px
+			text-transform: uppercase
+			outline: none
+			border: 0px
+			&:hover
+				background: #5c5c5c
+	.events
+		padding-top: 66px
+		font-family: "PTSerifBold"
+		font-size: 22px
+		text-align: center
+		height: 600px
+		width: 455px
+		background-color: #fff
+		-webkit-box-shadow: 0px 4px 14px -1px rgba(110,110,110,1)
+		-moz-box-shadow: 0px 4px 14px -1px rgba(110,110,110,1)
+		box-shadow: 0px 4px 14px -1px rgba(110,110,110,1)
+		.e_develop
+			height: 130px
+			width: 395px
+			margin: 0 auto
+			margin-bottom: 10px
+			img
+				float: left 
+				height: 70px
+				width: 70px
+				-webkit-border-radius: 35px
+				-moz-border-radius: 35px
+				border-radius: 35px
+			.e_message
+				float: left
+				height: 130px
+				width: 325px
+				text-align: left
+				padding-left: 20px
+				h4
+					margin: 0
+					font-size: 16px
+					font-family: "PTSerifBold"
+					color: $primary-color
+				.e_date, .e_time
+					display: inline-block
+					font-size: 12px
+					font-family: "PTSansBold"
+					color: #3b3b3b
+					background-image: url("../img/form_iconset.png")
+					background-repeat: no-repeat
+					text-align: right
+				.e_date
+					background-position: 0px -122px
+					width: 91px;
+					margin-right: 10px
+				.e_time
+					background-position: 0px -253px
+					width: 60px;
+				.e_text	
+					margin: 0
+					font-family: "PTSansRegular"
+					color: #3b3b3b
+					font-size: 14px
+					.e_more
+						font-family: "PTSansItalic"
+						font-size: 14px
+						color: $primary-color
+						&:hover
+							text-decoration: underline
+#share
+	text-align: center
+	height: 420px
+	padding-top: 120px
+	position: relative
+	.book, .tell_friends
+		margin: 0 auto
+		width: 300px
+		h3
+			color: #3b3b3b
+			font-size: 26px
+			font-family: "PTSerifBold"
+			margin: 0
+			margin-bottom: 20px
+		p
+			color: #5b5b5b
+			font-size: 16px
+			font-family: "PTSansRegular"
+			margin: 0
+			margin-bottom: 40px
+	.divide
+		position: absolute
+		width: 30px
+		height: 190px
+		left: 49%
+		top: 120px
+		.d_line_up, .d_line_down
+			width: 30px
+			height: 70px
+			background-image: url("../img/Dividerline.png")
+			background-repeat: no-repeat
+			margin-left: 16px
+		p
+			margin: 10px 0px
+footer
+	height: 305px
+	background-color: #222222
+	padding-top: 60px
+	.logo
+		a
+			color: $primary-color
+			font-family: "PTSerifBold"
+			font-size: 36px
+	h5
+		margin: 0
+		margin-bottom: 25px
+		font-family: "PTSerifBold"
+		text-transform: uppercase
+		font-size: 16px
+		color: #fff
+	ul
+		margin: 0
+		padding: 0
+		li
+			list-style-type: none
+			margin-bottom: 12px
+			a
+				color: #fff
+				text-transform: uppercase
+				font-size: 13px
+	p
+		font-family: "PTSansRegular"
+		color: #fff
+		font-size: 14px
+		a
+			color: $primary-color
+			&:hover
+				text-decoration: underline
+	.social
+		float: left
+		.soc_icon
+			float: left
+			margin-right: 30px
+			a
+				color: #fff
+.small_menu
+	width: 81px
+	height: 50px
+	padding: 16px 16px
+	float: right
+	margin-top: 27px
+	display: none

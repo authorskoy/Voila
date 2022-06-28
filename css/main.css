@@ -1,0 +1,587 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  color: #4b4b4b;
+  min-width: 320px;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: 50% 0;
+  position: relative;
+}
+
+header {
+  background-image: url("../img/bg_header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 700px;
+  color: #fff;
+  position: relative;
+}
+
+header .logo {
+  margin-top: 24px;
+}
+
+header .logo a {
+  color: #ff6633;
+  font-family: "PTSerifBold";
+  font-size: 36px;
+}
+
+header .main_menu {
+  margin-top: 40px;
+}
+
+header .main_menu li {
+  display: inline-block;
+  width: 120px;
+  vertical-align: top;
+  font-family: "PTSansItalic";
+  font-size: 13px;
+  margin-left: 50px;
+}
+
+header .main_menu li p {
+  margin: 0;
+  padding: 0;
+}
+
+header .main_menu li a {
+  color: #fff;
+  font-size: 14px;
+  font-family: "PTSerifBold";
+  text-transform: uppercase;
+}
+
+header .main_menu li a:hover {
+  text-decoration: underline;
+  color: #ff6633;
+}
+
+header .main_menu li .orange_link {
+  color: #ff6633;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-family: "PTSerifBold";
+  font-size: 52px;
+  text-align: center;
+  margin: 0;
+  margin-top: 160px;
+}
+
+header h3 {
+  font-family: "PTSerifRegular";
+  font-size: 36px;
+  text-align: center;
+  font-weight: normal;
+  margin: 0;
+}
+
+header h3 span {
+  text-decoration: underline;
+}
+
+header .scroll {
+  display: block;
+  position: absolute;
+  bottom: 54px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header .scroll a {
+  color: #fff;
+}
+
+header .scroll a span {
+  position: absolute;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  margin-left: -4px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header .scroll a .span1 {
+  margin-top: 10px;
+}
+
+header .scroll a .span2 {
+  margin-top: 20px;
+}
+
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+#about_s {
+  background-color: #f7f7f7;
+  padding-top: 100px;
+  position: relative;
+  height: 1000px;
+}
+
+#about_s .glass {
+  width: 583px;
+}
+
+#about_s .kitchen {
+  margin-top: 40px;
+  margin-left: -24px;
+  height: 226px;
+  width: 226px;
+}
+
+#about_s .beef_steak {
+  margin-top: 40px;
+  margin-left: 25px;
+  height: 226px;
+  width: 226px;
+}
+
+#about_s .container {
+  position: relative;
+}
+
+#about_s .container .McGregor {
+  position: absolute;
+  width: 636px;
+  height: 387px;
+  top: 366px;
+  left: 0;
+}
+
+.button {
+  background-color: #ff6633;
+  text-transform: uppercase;
+  font-family: "PTSansBold";
+  color: #fff;
+  font-size: 13px;
+  padding: 17px 51px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #d94717;
+}
+
+.about_block h3,
+.menu_block h3 {
+  text-align: center;
+  color: #3b3b3b;
+  font-size: 26px;
+  font-family: "PTSerifBold";
+}
+
+.about_block p,
+.menu_block p {
+  color: #4b4b4b;
+  font-size: 16px;
+  font-family: "PTSansRegular";
+}
+
+.about_block p a,
+.menu_block p a {
+  color: #ff6633;
+}
+
+.about_block p a:hover,
+.menu_block p a:hover {
+  text-decoration: underline;
+  color: #ff6633;
+}
+
+.about_block > a,
+.menu_block > a {
+  float: right;
+  margin-top: 31px;
+  margin-right: 31px;
+}
+
+#menu_s {
+  padding: 120px 0;
+  background-color: #fff;
+}
+
+#menu_s .photo1 {
+  float: left;
+}
+
+#menu_s .photo1 img {
+  width: 265px;
+  height: 265px;
+}
+
+#menu_s .photo2 {
+  float: right;
+}
+
+#menu_s .photo2 img {
+  width: 265px;
+  height: 265px;
+}
+
+#menu_s .photo3 {
+  float: left;
+}
+
+#menu_s .photo3 img {
+  margin-top: 25px;
+  width: 555px;
+  height: 265px;
+}
+
+#menu_s .menu_block {
+  margin-top: 120px;
+}
+
+#reservation {
+  background-color: #f7f7f7;
+  padding: 120px 0;
+}
+
+#reservation .pop_form {
+  padding-top: 66px;
+  font-family: "PTSerifBold";
+  font-size: 22px;
+  text-align: center;
+  height: 600px;
+  width: 455px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 14px -1px #6e6e6e;
+  box-shadow: 0px 4px 14px -1px #6e6e6e;
+}
+
+#reservation .pop_form input {
+  width: 310px;
+  height: 50px;
+  color: #555555;
+  font-size: 14px;
+  background-image: url("../img/form_iconset.png");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  background-color: #f7f7f7;
+  outline: none;
+  border: 1px solid #e5e4e4;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+#reservation .pop_form .form_name {
+  background-position: 275px 18px;
+}
+
+#reservation .pop_form .form_date {
+  background-position: 275px -107px;
+}
+
+#reservation .pop_form .form_time {
+  background-position: 275px -238px;
+}
+
+#reservation .pop_form .form_commensals {
+  background-position: 275px -381px;
+  margin-bottom: 25px;
+}
+
+#reservation .pop_form .form_button {
+  padding-top: 2px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-family: "PTSansBold";
+  color: #fff;
+  font-size: 14px;
+  background: #222222;
+  width: 310px;
+  height: 50px;
+  text-transform: uppercase;
+  outline: none;
+  border: 0px;
+}
+
+#reservation .pop_form .form_button:hover {
+  background: #5c5c5c;
+}
+
+#reservation .events {
+  padding-top: 66px;
+  font-family: "PTSerifBold";
+  font-size: 22px;
+  text-align: center;
+  height: 600px;
+  width: 455px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 14px -1px #6e6e6e;
+  box-shadow: 0px 4px 14px -1px #6e6e6e;
+}
+
+#reservation .events .e_develop {
+  height: 130px;
+  width: 395px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#reservation .events .e_develop img {
+  float: left;
+  height: 70px;
+  width: 70px;
+  -webkit-border-radius: 35px;
+  border-radius: 35px;
+}
+
+#reservation .events .e_develop .e_message {
+  float: left;
+  height: 130px;
+  width: 325px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#reservation .events .e_develop .e_message h4 {
+  margin: 0;
+  font-size: 16px;
+  font-family: "PTSerifBold";
+  color: #ff6633;
+}
+
+#reservation .events .e_develop .e_message .e_date,
+#reservation .events .e_develop .e_message .e_time {
+  display: inline-block;
+  font-size: 12px;
+  font-family: "PTSansBold";
+  color: #3b3b3b;
+  background-image: url("../img/form_iconset.png");
+  background-repeat: no-repeat;
+  text-align: right;
+}
+
+#reservation .pop_form .form-time__input {
+  background-image: none;
+  padding-right: 16px;
+}
+
+#reservation .events .e_develop .e_message .e_date {
+  background-position: 0px -122px;
+  width: 91px;
+  margin-right: 10px;
+}
+
+#reservation .events .e_develop .e_message .e_time {
+  background-position: 0px -253px;
+  width: 60px;
+}
+
+#reservation .events .e_develop .e_message .e_text {
+  margin: 0;
+  font-family: "PTSansRegular";
+  color: #3b3b3b;
+  font-size: 14px;
+}
+
+#reservation .events .e_develop .e_message .e_text .e_more {
+  font-family: "PTSansItalic";
+  font-size: 14px;
+  color: #ff6633;
+}
+
+#reservation .events .e_develop .e_message .e_text .e_more:hover {
+  text-decoration: underline;
+}
+
+#share {
+  text-align: center;
+  height: 420px;
+  padding-top: 120px;
+  position: relative;
+}
+
+#share .book,
+#share .tell_friends {
+  margin: 0 auto;
+  width: 300px;
+}
+
+#share .book h3,
+#share .tell_friends h3 {
+  color: #3b3b3b;
+  font-size: 26px;
+  font-family: "PTSerifBold";
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+#share .book p,
+#share .tell_friends p {
+  color: #5b5b5b;
+  font-size: 16px;
+  font-family: "PTSansRegular";
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+#share .divide {
+  position: absolute;
+  width: 30px;
+  height: 190px;
+  left: 49%;
+  top: 120px;
+}
+
+#share .divide .d_line_up,
+#share .divide .d_line_down {
+  width: 30px;
+  height: 70px;
+  background-image: url("../img/Dividerline.png");
+  background-repeat: no-repeat;
+  margin-left: 16px;
+}
+
+#share .divide p {
+  margin: 10px 0px;
+}
+
+footer {
+  height: 305px;
+  background-color: #222222;
+  padding-top: 60px;
+}
+
+footer .logo a {
+  color: #ff6633;
+  font-family: "PTSerifBold";
+  font-size: 36px;
+}
+
+footer h5 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "PTSerifBold";
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin-bottom: 12px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+footer p {
+  font-family: "PTSansRegular";
+  color: #fff;
+  font-size: 14px;
+}
+
+footer p a {
+  color: #ff6633;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+footer .social {
+  float: left;
+}
+
+footer .social .soc_icon {
+  float: left;
+  margin-right: 30px;
+}
+
+footer .social .soc_icon a {
+  color: #fff;
+}
+
+.small_menu {
+  width: 81px;
+  height: 50px;
+  padding: 16px 16px;
+  float: right;
+  margin-top: 27px;
+  display: none;
+}
